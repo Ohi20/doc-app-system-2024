@@ -1,6 +1,6 @@
 const express = require("express");
 const colors = require("colors");
-const moragan = require("morgan");
+const morgan = require("morgan");
 const dotenv = require("dotenv");
 
 //dotenv conig
@@ -11,7 +11,7 @@ const app = express();
 
 //middlewares
 app.use(express.json());
-app.use(moragan("dev"));
+app.use(morgan("dev"));
 
 //port
 const port = process.env.PORT || 8080;
